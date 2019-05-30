@@ -1,4 +1,6 @@
 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   color: #454545;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
@@ -6,6 +8,16 @@
 .wrapper {
   margin: 0 auto;
   width: 1080px;
+}
+
+.wrapper section h2 {
+  background: transparent url("../img/titlebar.png") no-repeat left top;
+  background-size: 40px 3px;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 8px;
 }
 
 .wrapper header {
@@ -27,6 +39,22 @@
   width: 100%;
 }
 
+.wrapper #main-visual {
+  position: relative;
+}
+
+.wrapper #main-visual .catchcopy {
+  height: auto;
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  width: 241px;
+}
+
+.wrapper #main-visual .catchcopy img {
+  width: 100%;
+}
+
 .wrapper #global-nav {
   margin-top: 40px;
 }
@@ -41,8 +69,13 @@
 }
 
 .wrapper #global-nav ul li {
+  border-left: 2px solid #454545;
   height: 25px;
   width: 180px;
+}
+
+.wrapper #global-nav ul li:last-child {
+  border-right: 2px solid #454545;
 }
 
 .wrapper #global-nav ul li a {
@@ -51,5 +84,39 @@
   text-align: center;
   text-decoration: none;
   line-height: 25px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
   display: block;
+}
+
+.wrapper #global-nav ul li a:hover {
+  background-color: #fafafa;
+  color: #9aaf24;
+}
+
+.wrapper .news-area {
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  text-align: center;
+  margin-top: 56px;
+  padding: 80px 0;
+}
+
+.wrapper .news-area .news-contents ul {
+  margin: 40px auto 0;
+  width: 720px;
+}
+
+.wrapper .news-area .news-contents ul li {
+  text-align: left;
+}
+
+.wrapper .news-area .news-contents ul li span {
+  background-color: #333333;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 0;
+  text-align: center;
+  width: 130px;
 }

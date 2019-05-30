@@ -1,8 +1,11 @@
+$bg-color: #fafafa;
 $text-color: #454545;
+$key-color: #9aaf24;
 
 
 
 * {
+  box-sizing: border-box;
   color: $text-color;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
@@ -10,6 +13,18 @@ $text-color: #454545;
 .wrapper {
   margin: 0 auto;
   width: 1080px;
+
+  section {
+    h2 {
+      background: transparent url("../img/titlebar.png") no-repeat left top;
+      background-size: 40px 3px;
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      padding-top: 8px;
+    }
+  }
 
   header {
     padding: 36px 0;
@@ -28,6 +43,21 @@ $text-color: #454545;
     }
   } // header
 
+  #main-visual {
+    position: relative;
+    .catchcopy {
+      height: auto;
+      position: absolute;
+      right: 100px;
+      top: 50px;
+      width: 241px;
+
+      img {
+        width: 100%;
+      }
+    }
+  } // #main-visual
+
   #global-nav {
     margin-top: 40px;
     ul {
@@ -35,17 +65,56 @@ $text-color: #454545;
       justify-content: space-between;
 
       li {
+        border-left: 2px solid $text-color;
         height: 25px;
         width: 180px;
+        &:last-child {
+          border-right: 2px solid $text-color;
+        }
+
         a {
           font-family: 'Montserrat', sans-serif;
           font-weight: bold;
           text-align: center;
           text-decoration: none;
           line-height: 25px;
+          transition: all .3s;
           display: block;
+
+          &:hover {
+            background-color: $bg-color;
+            color: $key-color;
+          }
         }
       }
     }
   } // #global-nav
+
+  .news-area {
+    background-color: $bg-color;
+    border: 1px solid #eee;
+    text-align: center;
+    margin-top: 56px;
+    padding: 80px 0;
+
+    .news-contents {
+       ul {
+         margin: 40px auto 0;
+         width: 720px;
+         
+         li {
+           text-align: left;
+
+           span {
+             background-color: #333333;
+             color: #fff;
+             display: inline-block;
+             padding: 8px 0;
+             text-align: center;
+             width: 130px;
+           }
+         }
+       }
+    }
+  }
 }

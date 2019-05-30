@@ -1,0 +1,36 @@
+* {
+  color: red;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1080px;
+}
+
+.wrapper header {
+  padding: 36px 0;
+}
+
+.wrapper header h1 {
+  display: inline-block;
+  height: 31px;
+  width: 208px;
+}
+
+.wrapper header h1 a {
+  display: block;
+}
+
+.wrapper header h1 a img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.wrapper #global-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}

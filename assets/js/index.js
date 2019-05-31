@@ -1,4 +1,4 @@
-$('.main-images').slick({
+$('.mainvisual__images').slick({
   infinite: true,
   speed: 500,
   fade: true,

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="wrapper">
+  <div class="container">
     <header>
       <h1>
         <a href="#">
@@ -20,8 +20,8 @@
         </a>
       </h1>
     </header>
-    <div id="main-visual">
-      <ul class="main-images">
+    <div class="mainvisual">
+      <ul class="mainvisual__images">
         <li>
           <img src="assets/img/mainimage1.png" alt="メインビジュアル1">
         </li>
@@ -36,100 +36,151 @@
         <img src="assets/img/catchcopy.png" alt="WORK HARD, PLAY HARD">
       </p>
     </div>
-    <nav id="global-nav">
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SHOP</a></li>
-        <li><a href="#">ACCESS</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">CONTACT</a></li>
+    <nav id="globalnav">
+      <ul class="globalnav__list">
+        <li class="globalnav__list__item"><a href="#" class="now">HOME</a></li>
+        <li class="globalnav__list__item"><a href="#">ABOUT</a></li>
+        <li class="globalnav__list__item"><a href="#">SHOP</a></li>
+        <li class="globalnav__list__item"><a href="#">ACCESS</a></li>
+        <li class="globalnav__list__item"><a href="#">BLOG</a></li>
+        <li class="globalnav__list__item"><a href="#">CONTACT</a></li>
       </ul>
     </nav>
     <main>
-      <section class="news-area">
-        <div class="news-contents">
+      <section class="takao__section news">
+        <div class="news__container">
           <h2>NEWS</h2>
-          <ul>
-            <li>
+          <ul class="news__container__list">
+            <li class="news__container__list__item">
               <span>2018.12.17</span>
               <a href="#">TAKAOSANオリジナルハードシェルを限定販売いたしました。</a>
             </li>
-            <li>
+            <li class="news__container__list__item">
               <span>2018.11.09</span>
               <a href="#">PFCフリー撥水剤プレゼントキャンペーン実施中</a>
             </li>
-            <li>
+            <li class="news__container__list__item">
               <span>2018.06.30</span>
               <a href="#">家族参加型 雪上運動会 & 山ガールコラボレーションツアーのご案内。</a>
             </li>
-            <li>
+            <li class="news__container__list__item">
               <span>2018.03.14</span>
               <a href="#">TAKAOSANオンラインショップがオープンしました。オンラインクーポンを期間限定で配布中。お見逃なく！</a>
             </li>
           </ul>
         </div>
       </section>
-      <section class="features-area">
+      <section class="takao__section takao__section-margin features">
         <h2>FEATURES</h2>
-        <div>
-          <figure>
+        <div class="features__container">
+          <figure class="features__container__left">
             <img src="assets/img/features-image.jpg" alt="features-image">
           </figure>
-          <div>
+          <div class="features__container__right">
             <h3>アウトドアシーンを想定された防水性</h3>
-            <p>TAKAOSANのハードウェアは、最高の素材や最高の技術・革新的なデザインを追求し続けるその姿勢から、「コストパフォーマンスという言葉は存在しない」と言い切るほど、品質に徹底的にこだわるブランド。今では各メーカーで当たり前になっている「止水ジッパー」やTAKAOSANが開発したものです。<br>
-              また、一番人気といわれる「Aero888」をはじめとしたバックパックでは、表生地に"バリスティックナイロン"という強度のある撥水ナイロンを使用し、裏地にもハイパロンという耐性ゴムを使用。表と裏のWの防水で、アウトドアシーンや普段の急な雨でも安心です。
-            </p>
+            <div class="features__container__right__text">
+              <p>TAKAOSANのハードウェアは、最高の素材や最高の技術・革新的なデザインを追求し続けるその姿勢から、「コストパフォーマンスという言葉は存在しない」と言い切るほど、品質に徹底的にこだわるブランド。今では各メーカーで当たり前になっている「止水ジッパー」やTAKAOSANが開発したものです。</p>
+              <p>また、一番人気といわれる「Aero888」をはじめとしたバックパックでは、表生地に"バリスティックナイロン"という強度のある撥水ナイロンを使用し、裏地にもハイパロンという耐性ゴムを使用。表と裏のWの防水で、アウトドアシーンや普段の急な雨でも安心です。</p>
+            </div>
           </div>
-        </div> 
+        </div>
       </section>
-      <section class="subscription-area">
+      <section class="takao__section takao__section-margin subscription">
         <h2>SUBSCRIPTION</h2>
-        <p>TAKAOSANオススメの商品を毎月お客様のもとにお送りする定額サービスを実施しております。初月無料なので、安心して始めることが出来ます。</p>
-        <ul>
-          <li>
+        <p class="subscription__desc">TAKAOSANオススメの商品を毎月お客様のもとにお送りする定額サービスを実施しております。初月無料なので、安心して始めることが出来ます。</p>
+        <ul class="subscription__list">
+          <li class="subscription__list__item">
             <a href="#">
               <img src="assets/img/subscription-starter-image.jpg" alt="starter-image">
-              <h3>Starter</h3>
-              <p><span>¥</span>2,400<span>/m</span></p>
-              <p>気軽に始められるスタータープラン</p>
-              <span>詳しくはこちら</span>
+              <div class="subscription__list__item__container">
+                <h3>Starter</h3>
+                <div class="subscription__list__item__container__text">
+                  <p class="subscription__list__item__container__text__bill"><span>¥&nbsp;</span>2,400<span>/m</span></p>
+                  <p class="subscription__list__item__container__text__comment">気軽に始められるスタータープラン</p>
+                  <span class="subscription__list__item__container__text__btn">詳しくはこちら</span>
+                </div>
+              </div>
             </a>
           </li>
-          <li>
+          <li class="subscription__list__item">
             <a href="#">
               <img src="assets/img/subscription-standard-image.jpg" alt="starter-image">
-              <h3>Standard</h3>
-              <p><span>¥</span>7,800<span>/m</span></p>
-              <p>当店オススメのスタンダードパック</p>
-              <span>詳しくはこちら</span>
+              <div class="subscription__list__item__container">
+                <h3>Standard</h3>
+                <div class="subscription__list__item__container__text">
+                  <p class="subscription__list__item__container__text__bill"><span>¥&nbsp;</span>7,800<span>/m</span></p>
+                  <p class="subscription__list__item__container__text__comment">当店オススメのスタンダードパック</p>
+                  <span class="subscription__list__item__container__text__btn">詳しくはこちら</span>
+                </div>
+              </div>
             </a>
           </li>
-          <li>
+          <li class="subscription__list__item">
             <a href="#">
               <img src="assets/img/subscription-master-image.jpg" alt="starter-image">
-              <h3>Master</h3>
-              <p><span>¥</span>16,400<span>/m</span></p>
-              <p>ハイブランドを毎月お届けします</p>
-              <span>詳しくはこちら</span>
+              <div class="subscription__list__item__container">
+                <h3>Master</h3>
+                <div class="subscription__list__item__container__text">
+                  <p class="subscription__list__item__container__text__bill"><span>¥&nbsp;</span>16,400<span>/m</span></p>
+                  <p class="subscription__list__item__container__text__comment">ハイブランドを毎月お届けします</p>
+                  <span class="subscription__list__item__container__text__btn">詳しくはこちら</span>
+                </div>
+              </div>
             </a>
           </li>
         </ul>
       </section>
-      <section class="items-area">
+      <section class="takao__section takao__section-margin photos">
         <h2>ITEMS</h2>
-        <ul>
-          <li><img src="assets/img/items-image01.png" alt="items-image01"></li>
-          <li><img src="assets/img/items-image02.png" alt="items-image02"></li>
-          <li><img src="assets/img/items-image03.png" alt="items-image03"></li>
-          <li><img src="assets/img/items-image04.png" alt="items-image04"></li>
-          <li><img src="assets/img/items-image05.png" alt="items-image05"></li>
-          <li><img src="assets/img/items-image06.png" alt="items-image06"></li>
-          <li><img src="assets/img/items-image07.png" alt="items-image07"></li>
-          <li><img src="assets/img/items-image08.png" alt="items-image08"></li>
-          <li><img src="assets/img/items-image09.png" alt="items-image09"></li>
-          <li><img src="assets/img/items-image10.png" alt="items-image10"></li>
+        <ul class="photos__list">
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image01.png" alt="items-image01"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image02.png" alt="items-image02"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image03.png" alt="items-image03"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image04.png" alt="items-image04"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image05.png" alt="items-image05"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image06.png" alt="items-image06"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image07.png" alt="items-image07"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image08.png" alt="items-image08"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image09.png" alt="items-image09"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image10.png" alt="items-image10"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image11.png" alt="items-image11"></li>
+            </a>
+          <li class="photos__list__item">
+            <a href="#">
+              <img src="assets/img/items-image12.png" alt="items-image12"></li>
+            </a>
         </ul>
       </section>
     </main>

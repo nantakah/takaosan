@@ -17,6 +17,7 @@ $key-color2: #c9e23f;
 
 .container {
   margin: 0 auto;
+  overflow: hidden;
   width: 1080px;
 
   .takao__section {
@@ -26,12 +27,12 @@ $key-color2: #c9e23f;
     }
     h2 {
       background: transparent url("../img/titlebar.png") no-repeat left top;
-      background-size: 40px 3px;
+      background-size: 40px 4px;
       display: inline-block;
       font-family: 'Montserrat', sans-serif;
       font-size: $font-size-lg;
       font-weight: bold;
-      padding-top: 8px;
+      padding-top: 12px;
     }
   }
 
@@ -50,10 +51,16 @@ $key-color2: #c9e23f;
         }
       }
     }
+    .menubtn {
+      display: none;
+    }
   } // header
 
   .mainvisual {
     position: relative;
+    img {
+      width: 100%;
+    }
     .catchcopy {
       height: auto;
       position: absolute;
@@ -90,6 +97,11 @@ $key-color2: #c9e23f;
           transition: all .3s;
           display: block;
 
+          &.now {
+            color: $key-color1;
+            pointer-events: none;
+          }
+
           &:hover {
             background-color: $bg-color;
             color: $key-color1;
@@ -112,24 +124,26 @@ $key-color2: #c9e23f;
          width: 720px;
 
          &__item {
-            margin-top: 24px;
             position: relative;
+            margin-top: 24px;
             text-align: left;
 
            span {
              background-color: #333333;
              color: #fff;
-             display: inline-block;
-             margin-right: 40px;
-             padding: 8px 0;
+             display: block;
+             font-family: 'Montserrat', sans-serif;
+             font-size: $font-size-sm;
+             padding: 9px 0;
+             position: absolute;
              text-align: center;
              width: 130px;
            }
 
            a {
-             left: 170px;
+             display: inline-block;
              line-height: 32px;
-             position: absolute;
+             margin-left: 170px;
              text-decoration-color: #c3c3c3;
            }
          } // .news__container__list__item
@@ -166,7 +180,7 @@ $key-color2: #c9e23f;
           line-height: 1.6;
           margin-top: 40px;
 
-          p {
+          p + p {
             margin-top: 24px;
           }
         }
@@ -184,7 +198,7 @@ $key-color2: #c9e23f;
 
     &__list {
       display: flex;
-      justify-contents: space-between;
+      justify-content: space-between;
       margin-top: 61px;
 
       &__item {
@@ -229,6 +243,7 @@ $key-color2: #c9e23f;
             margin-top: 24px;
 
             &__bill {
+              font-family: 'Montserrat', sans-serif;
               font-size: 40px;
               margin-top: 24px;
               span {
@@ -286,7 +301,84 @@ $key-color2: #c9e23f;
   } // footer
 }
 
-.now {
-  color: $key-color1;
-  pointer-events: none;
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+
+    main {
+      padding: 0 12px;
+    }
+
+    header {
+      padding: 20px 0 24px 16px;
+
+      h1 {
+        height: 28px;
+        width: 187px;
+      }
+
+      .menubtn {
+        display: block;
+        height: 32px;
+        position: absolute;
+        right: 19px;
+        top: 22px;
+        width: 32px;
+      }
+    }
+
+    .mainvisual {
+      .catchcopy {
+        right: 15px;
+        top: 25px;
+        width: 120px;
+      }
+    }
+
+    #globalnav {
+      display: none;
+    }
+
+    .news {
+      margin: 56px 0;
+      padding: 56px 24px;
+      &__container {
+        &__list {
+          margin-top: 31px;
+          width: 100%;
+          &__item {
+            margin-top: 21px;
+            span {
+              font-family: 'Montserrat', sans-serif;
+              font-size: 12px;
+              font-weight: bold;
+              position: static;
+              width: 112px;
+            }
+            a {
+              line-height: 1.5;
+              margin: 12px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+
+    .features {
+      margin-top: 44px;
+      padding: 0 16px;
+      &__container {
+        margin-top: 44px;
+        &__left {
+          width: 100%;
+        }
+      }
+    }
+
+    .subscription {
+      &__list {
+        display: none;
+      }
+    }
+  }
 }

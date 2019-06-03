@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.menubtn').on('click', function(){
-    $('#globalnav').slideToggle();
+    $('#globalnav').toggleClass('active');
     $('html, body').toggleClass('hidden');
     return false;
   });

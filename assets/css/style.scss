@@ -76,6 +76,7 @@ $key-color2: #c9e23f;
 
   #globalnav {
     margin-top: 40px;
+
     .globalnav__list {
       display: flex;
       justify-content: space-between;
@@ -343,13 +344,19 @@ $key-color2: #c9e23f;
 
     #globalnav {
       background-color: rgba(255,255,255,0.9);
-      display: none;
+      opacity: 0;
       height: 100vh;
       margin-top: 72px;
       position: absolute;
       top: 0;
+      transition: all .3s;
       width: 100%;
       z-index: 100;
+
+      &.active {
+        opacity: 1;
+      }
+
       .globalnav__list {
         display: block;
         height: 100vh;
@@ -358,7 +365,6 @@ $key-color2: #c9e23f;
           border: none;
           border-top: 1px solid #ccc;
           height: auto;
-          padding: 15px 0;
           width: 100%;
           &:last-child {
             border-right: none;
@@ -366,6 +372,7 @@ $key-color2: #c9e23f;
           }
 
           a {
+            padding: 15px 0;
             &.now {
               color: $text-color;
             }
@@ -418,7 +425,7 @@ $key-color2: #c9e23f;
           margin: 30px 0 0 0;
 
           &__text {
-            margin-top: 50px;
+            margin-top: 48px;
 
             p + p {
               margin-top: 32px;
@@ -442,10 +449,21 @@ $key-color2: #c9e23f;
           margin: 24px 0 0 0;
           width: 100%;
           &__container {
+            padding: 21px 0 18px 0;
             &__text {
               font-size: $font-size-rg;
+              margin-top: 19px;
+              &__bill {
+                margin-top: 0;
+              }
+              &__comment {
+                margin-top: 29px;
+              }
               &__btn {
+                font-weight: normal;
                 height: 56px;
+                line-height: 56px;
+                margin-top: 29px;
                 width: 313px;
               }
             }
@@ -457,6 +475,7 @@ $key-color2: #c9e23f;
     .photos {
       margin-top: 99px;
       &__list {
+        justify-content: center;
         margin-top: 40px;
         &__item {
           width: 33.3%;

@@ -347,7 +347,7 @@ $key-color2: #c9e23f;
       opacity: 0;
       height: 100vh;
       margin-top: 72px;
-      position: absolute;
+      position: fixed;
       top: 0;
       transition: all .3s;
       width: 100%;
@@ -426,6 +426,10 @@ $key-color2: #c9e23f;
 
           &__text {
             margin-top: 48px;
+
+            h3 {
+              line-height: 48px;
+            }
 
             p + p {
               margin-top: 32px;

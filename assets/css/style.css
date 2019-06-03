@@ -370,7 +370,7 @@
     opacity: 0;
     height: 100vh;
     margin-top: 72px;
-    position: absolute;
+    position: fixed;
     top: 0;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -445,6 +445,9 @@
   }
   .container .features__container__right__text {
     margin-top: 48px;
+  }
+  .container .features__container__right__text h3 {
+    line-height: 48px;
   }
   .container .features__container__right__text p + p {
     margin-top: 32px;
